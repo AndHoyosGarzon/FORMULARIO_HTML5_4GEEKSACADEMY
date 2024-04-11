@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO HTML5</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/94efe4d79c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <form  method="get">
+        <div class="container rounded-top border bg-light mt-5 py-2">
+            <h1 class="h3">Payment form example</h1>
+        </div>
+        
+        <div class="container pt-4 border">
+            <input class="form-control py-3  bg-danger bg-opacity-25 texto"
+            type="text" disabled placeholder="Some fieldset are missing" 
+            aria-label=".form-control-sm example">
+            
+            <div class="row pt-4">
+                <div class="mb-3 col-sm-12 col-md-6">
+                    <label class="form-label">Card #</label>
+                    <input type="number" name="creditCard" class="form-control"  
+                    placeholder="XXXXXXXXXXXXXX" required>
+                </div>
+                <div class="mb-3 col-sm-12 col-md-2">
+                    <label class="form-label">CVC #</label>
+                    <input type="number" name="numberCvc" class="form-control"
+                     placeholder="0000" required>
+                </div>
+                <div class="mb-3 col-sm-12 col-md-4">
+                    <label class="form-label">Amount <strong>$</strong></label>
+                    <input type="number" name="amount" class="form-control"  
+                    placeholder="Amount" required>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div class="mb-3 col-sm-12 col-md-7">
+                    <label class="form-label">Firs Name</label>
+                    <input type="text" name="firstName" class="form-control" required>
+                </div>
+                <div class="mb-3 col-sm-12 col-md-5">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" name="LastName" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+            <div class="mb-3 col-sm-12 col-md-6">
+                <label class="form-label">City</label>
+                <input type="text" name="city" class="form-control" required>
+            </div>
+            <div class="mb-3 col-sm-12 col-md-3">
+                <label>State</label>
+                <select class="form-select text-secondary pt-1 pb-2 mt-2" 
+                aria-label="Default select example" name="state" required>
+                    <option selected>Pick a state</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="mb-3 col-sm-12 col-md-3">
+                <label class="form-label">Postal Code</label>
+                <input type="number" name="postalCode" class="form-control" >
+            </div>
+            </div>
+
+            <div class="row  pt-4 mb-5">
+            <div class="mb-3 col-6">
+                <label class="form-label">We accept:</label>
+                <div class="col-sm-12 col-md-6  bg-secondary rounded p-2">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" value="option1">
+                        <label class="form-check-label ms-2">
+                            <i class="fa-brands fa-cc-mastercard fa-lg" style="color: #ffffff;"></i>
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" 
+                        id="inlineRadio2" value="option2">
+                        <label class="form-check-label ms-2">
+                            <i class="fa-brands fa-cc-visa fa-lg" style="color: #ffffff;"></i>
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" value="option3">
+                        <label class="form-check-label ms-2">
+                            <i class="fa-brands fa-cc-diners-club fa-lg" style="color: #ffffff;"></i>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions4" value="option4">
+                        <label class="form-check-label ms-2" >
+                            <i class="fa-brands fa-cc-discover fa-lg" style="color: #ffffff;"></i>
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="mb-3 col-sm-12 col-md-6">
+                <label class="form-label">Message</label>
+                <div class="form-floating">
+                    <textarea class="form-control"  name="message"></textarea>
+                </div>
+                <p class="text-secondary mt-1">Add any notes here.</p>
+            </div>
+            </div>
+        
+        </div>
+            <div class="container d-flex justify-content-sm-center justify-content-md-end bg-light py-3 border rounded-bottom">
+                    <input class="btn btn-secondary me-2" type="submit" value="Cancel" name="cancel">
+                    <input class="btn btn-primary" type="submit" value="Send" name="send">
+            </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+   
+</body>
+</html>
